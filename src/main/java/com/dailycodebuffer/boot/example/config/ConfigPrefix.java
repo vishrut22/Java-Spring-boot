@@ -2,6 +2,7 @@ package com.dailycodebuffer.boot.example.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 
 //Property wiring by prefix of config properties
 

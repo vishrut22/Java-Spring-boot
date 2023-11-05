@@ -12,6 +12,9 @@ import org.springframework.stereotype.Component;
 public class HelloWorldComponent {
     Logger logger = LoggerFactory.getLogger(HelloWorldComponent.class);
 
+    @Autowired
+    private DBComponent dbComponent;
+
     @Value("${custom.property.message}")
     private String message;
 
@@ -25,6 +28,7 @@ public class HelloWorldComponent {
         logger.debug("Debugging from Application component.");
         logger.trace("Tracing from Application component.");
         logger.info("info from Application component.");
+        dbComponent.performDBOperation();
         return message+ " of "+configPrefix.getFirstName()+" "+configPrefix.getLastName();
     }
 
