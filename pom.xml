@@ -32,6 +32,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+	   <!-- Dev tools dependency helps to do refresh application as and when it changes -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
 		<!-- undertow dependency
 		In this example we disabled tomcat and used different webserver. notice logs around same. -->
 		<!--<dependency>
