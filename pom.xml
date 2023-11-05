@@ -28,6 +28,10 @@
 				</exclusion>
 			</exclusions>-->
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 		<!-- undertow dependency
 		In this example we disabled tomcat and used different webserver. notice logs around same. -->
 		<!--<dependency>
