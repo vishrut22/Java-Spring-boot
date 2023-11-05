@@ -15,4 +15,10 @@ public class HelloRestController {
         return helloWorldComponent.sayHello();
 
     }
+
+    @GetMapping("/yaml")
+    public String sayHelloToYaml() {
+        return helloWorldComponent.sayHelloToYaml();
+
+    }
 }
